@@ -1,1 +1,4 @@
-Openwebrtc-gst-plugins
+openwebrtc-gst-plugins
+======================
+
+GStreamer plugins used by OpenWebRTC
