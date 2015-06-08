@@ -32,10 +32,10 @@ AC_CANONICAL_HOST
 dnl Check for the required version of GStreamer core (and gst-plugins-base)
 dnl This will export GST_CFLAGS and GST_LIBS variables for use in Makefile.am
 PKG_CHECK_MODULES(GST, [
-  gstreamer-1.0 >= $GST_REQUIRED
-  gstreamer-base-1.0 >= $GST_REQUIRED
-  gstreamer-controller-1.0 >= $GST_REQUIRED
-  gstreamer-video-1.0 >= $GST_REQUIRED
+  gstreamer-1.5 >= $GST_REQUIRED
+  gstreamer-base-1.5 >= $GST_REQUIRED
+  gstreamer-controller-1.5 >= $GST_REQUIRED
+  gstreamer-video-1.5 >= $GST_REQUIRED
 ], [
   AC_SUBST(GST_CFLAGS)
   AC_SUBST(GST_OBJCFLAGS)
@@ -229,9 +229,9 @@ AM_COND_IF([BUILD_ERCOLORSPACE],
 
 dnl set the plugindir where plugins should be installed (for src/Makefile.am)
 if test "x${prefix}" = "x$HOME"; then
-  plugindir="$HOME/.gstreamer-1.0/plugins"
+  plugindir="$HOME/.gstreamer-1.5/plugins"
 else
-  plugindir="\$(libdir)/gstreamer-1.0"
+  plugindir="\$(libdir)/gstreamer-1.5"
 fi
 AC_SUBST(plugindir)
 
@@ -242,6 +242,6 @@ AC_SUBST(GST_PLUGIN_LDFLAGS)
 AC_CONFIG_FILES([Makefile gst-libs/Makefile gst-libs/gst/Makefile
                  gst-libs/gst/sctp/Makefile ext/Makefile
                  ext/sctp/Makefile gst/Makefile sys/Makefile
-                 gst/videorepair/Makefile gstreamer-sctp-1.0.pc
-                 gstreamer-sctp-1.0-uninstalled.pc])
+                 gst/videorepair/Makefile gstreamer-sctp-1.5.pc
+                 gstreamer-sctp-1.5-uninstalled.pc])
 AC_OUTPUT

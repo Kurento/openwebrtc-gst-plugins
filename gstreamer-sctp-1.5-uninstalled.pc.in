@@ -5,8 +5,8 @@ includedir=@abs_top_builddir@/gst-libs
 
 Name: GStreamer SCTP Library
 Description: SCTP helper functions, uninstalled
-Requires: gstreamer-1.0
+Requires: gstreamer-1.5
 Version: @VERSION@
-Libs: @abs_top_builddir@/gst-libs/gst/sctp/libgstsctp-1.0.la
+Libs: @abs_top_builddir@/gst-libs/gst/sctp/libgstsctp-1.5.la
 Cflags: -I@abs_top_srcdir@/gst-libs -I@abs_top_builddir@/gst-libs
 

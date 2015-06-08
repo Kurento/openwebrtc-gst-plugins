@@ -10,6 +10,6 @@ CLEANFILES = build out
 GITIGNOREFILES = gst-build-* .build_successful_tag_file.txt
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = gstreamer-sctp-1.0.pc
+pkgconfig_DATA = gstreamer-sctp-1.5.pc
 
 -include $(top_srcdir)/git.mk
