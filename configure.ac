@@ -5,8 +5,8 @@ AC_PREREQ([2.68])
 AC_INIT([openwebrtc-gst-plugins],[0.10.0])
 
 dnl required versions of gstreamer and plugins-base
-GST_REQUIRED=1.0
-GSTPB_REQUIRED=1.0
+GST_REQUIRED=1.5
+GSTPB_REQUIRED=1.5
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -44,7 +44,7 @@ PKG_CHECK_MODULES(GST, [
   AC_MSG_ERROR([
       You need to install or upgrade the GStreamer development
       packages on your system. On debian-based systems these are
-      libgstreamer1.0-dev and libgstreamer-plugins-base1.0-dev.
+      libgstreamer1.5-dev and libgstreamer-plugins-base1.5-dev.
       on RPM-based systems gstreamer1-devel, libgstreamer1-devel
       or similar. The minimum version required is $GST_REQUIRED.
   ])
