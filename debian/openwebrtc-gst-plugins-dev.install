@@ -1,2 +1,3 @@
+usr/include/gstreamer-1.5/gst/sctp/*h
 usr/lib/*/*.so
 usr/lib/*/pkgconfig/*.pc
