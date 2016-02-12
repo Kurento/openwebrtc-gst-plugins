@@ -5,7 +5,9 @@ Maintainer: Kurento Maintenance Team <kurento@googlegroups.com>
 Build-Depends: debhelper (>= 8.0.0),
  autoconf,
  libtool,
- libusrsctp-dev
+ libusrsctp-dev,
+ libgstreamer1.5-dev,
+ libgstreamer-plugins-base1.5-dev
 Standards-Version: 3.9.4
 
 Package: openwebrtc-gst-plugins
