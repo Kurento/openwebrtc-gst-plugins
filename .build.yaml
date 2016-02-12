@@ -1,0 +1,7 @@
+prebuild-command: "./autogen.sh"
+dependencies:
+  - name: gstreamer
+    version: ">=1.7.1"
+  - name: gst-plugins-base
+    version: ">=1.7.1"
+  - name: usrsctp
