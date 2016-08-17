@@ -2,7 +2,7 @@
 dnl required version of autoconf
 AC_PREREQ([2.68])
 
-AC_INIT([openwebrtc-gst-plugins],[0.10.0])
+AC_INIT([openwebrtc-gst-plugins],[0.10.0.1])
 
 dnl required versions of gstreamer and plugins-base
 GST_REQUIRED=1.5
