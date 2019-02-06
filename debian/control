@@ -3,6 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Kurento Maintenance Team <kurento@googlegroups.com>
 Build-Depends: debhelper (>= 8.0.0),
+ dh-autoreconf,
  autoconf,
  automake,
  libtool,
