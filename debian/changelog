@@ -1,3 +1,17 @@
+openwebrtc-gst-plugins (0.10.0-1kurento1) UNRELEASED; urgency=medium
+
+  [ Santiago Carot-Nemesio ]
+  * Add missing included files
+
+  [ Jose Antonio Santos Cadenas ]
+  * Add build configuration
+
+  [ Juan Navarro ]
+  * Fix build: Automake is required (add to build dependencies)
+  * debian/rules: Run pre-build command with dh-autoreconf
+
+ -- Juan Navarro <juan.navarro@gmx.es>  Wed, 06 Feb 2019 19:36:49 +0100
+
 openwebrtc-gst-plugins (0.10.0) testing; urgency=medium
 
   * Initial release.
