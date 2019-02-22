@@ -29,6 +29,9 @@ LT_INIT
 
 AC_CANONICAL_HOST
 
+dnl "usrsctp" uses pthread functions, so the plugins must be linked against it.
+AC_CHECK_LIB(pthread, pthread_create)
+
 dnl Check for the required version of GStreamer core (and gst-plugins-base)
 dnl This will export GST_CFLAGS and GST_LIBS variables for use in Makefile.am
 PKG_CHECK_MODULES(GST, [
