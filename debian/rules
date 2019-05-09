@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --with autoreconf --parallel
+
+.PHONY: override_dh_strip
+
+override_dh_strip:
+	dh_strip --dbg-package=openwebrtc-gst-plugins-dbg

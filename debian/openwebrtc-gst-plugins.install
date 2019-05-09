@@ -1,0 +1,2 @@
+usr/lib/*/lib*.so.*
+usr/lib/*/gstreamer-1.0/lib*.so
