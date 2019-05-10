@@ -4,7 +4,7 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with autoreconf --parallel
+	dh $@ --with autoreconf
 
 .PHONY: override_dh_strip
 
