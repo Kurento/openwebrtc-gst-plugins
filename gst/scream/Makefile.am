@@ -12,6 +12,7 @@ libgstscream_la_CFLAGS = \
     $(GST_CFLAGS)
 
 libgstscream_la_LIBADD = \
+    -lm \
     -lgstrtp-1.0 \
     $(GST_PLUGINS_BASE_LIBS) \
     $(GST_BASE_LIBS) \
